@@ -37,7 +37,7 @@
     [super tearDown];
 }
 
-- (void)testSwizzle
+- (void)testBasicSwizzle
 {
   DummyObject *dummy = [[DummyObject alloc] init];
   
@@ -52,7 +52,23 @@
   STAssertFalse([result1 isEqualToString:result2], @"Same method called twice, two different results");
   
   STAssertEquals(result1, result3, @"Different method, same strings");
+}
+
+-(void)testEvilSwizzle{
+  NSString *basicString = @"I'm a string";
+  NSString *upperVersion = @"I'M A STRING";
+  NSString *lowerVersion = @"i'm a string";
   
+  [basicString swizzleMe:@selector(uppercaseString) andNewMethod:@selector(lowercaseString)];
+  
+  NSString *result1 = [basicString uppercaseString];
+  NSString *result2 = [basicString lowercaseString];
+  
+  NSLog(@"result1 is %@", result1);
+  NSLog(@"result2 is %@", result2);
+  
+  STAssertTrue([lowerVersion isEqualToString:result1], @"Upper equals lower?");
+  STAssertTrue([upperVersion isEqualToString:result2], @"Dogs and cats, living together, mass hysteria");
 }
 
 @end
