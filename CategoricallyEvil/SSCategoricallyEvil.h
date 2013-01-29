@@ -7,7 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
+#import </usr/include/objc/objc-class.h>
 
-@interface CategoricallyEvil : NSObject
-
+@interface NSObject(Swazzle)
+-(void) swizzleMe:(SEL) orig andNewMethod:(SEL) new;
 @end
+

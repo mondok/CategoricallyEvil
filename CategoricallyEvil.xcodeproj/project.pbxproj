@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		9D7D4F6816B75DAA002FED35 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D7D4F6716B75DAA002FED35 /* Cocoa.framework */; };
 		9D7D4F7216B75DAA002FED35 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9D7D4F7016B75DAA002FED35 /* InfoPlist.strings */; };
-		9D7D4F7616B75DAA002FED35 /* CategoricallyEvil.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D4F7516B75DAA002FED35 /* CategoricallyEvil.m */; };
+		9D7D4F7616B75DAA002FED35 /* SSCategoricallyEvil.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D4F7516B75DAA002FED35 /* SSCategoricallyEvil.m */; };
 		9D7D4F7E16B75DAA002FED35 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D7D4F7D16B75DAA002FED35 /* SenTestingKit.framework */; };
 		9D7D4F7F16B75DAA002FED35 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D7D4F6716B75DAA002FED35 /* Cocoa.framework */; };
 		9D7D4F8216B75DAA002FED35 /* CategoricallyEvil.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D7D4F6416B75DAA002FED35 /* CategoricallyEvil.framework */; };
@@ -36,8 +36,8 @@
 		9D7D4F6F16B75DAA002FED35 /* CategoricallyEvil-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CategoricallyEvil-Info.plist"; sourceTree = "<group>"; };
 		9D7D4F7116B75DAA002FED35 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		9D7D4F7316B75DAA002FED35 /* CategoricallyEvil-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CategoricallyEvil-Prefix.pch"; sourceTree = "<group>"; };
-		9D7D4F7416B75DAA002FED35 /* CategoricallyEvil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CategoricallyEvil.h; sourceTree = "<group>"; };
-		9D7D4F7516B75DAA002FED35 /* CategoricallyEvil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CategoricallyEvil.m; sourceTree = "<group>"; };
+		9D7D4F7416B75DAA002FED35 /* SSCategoricallyEvil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSCategoricallyEvil.h; sourceTree = "<group>"; };
+		9D7D4F7516B75DAA002FED35 /* SSCategoricallyEvil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSCategoricallyEvil.m; sourceTree = "<group>"; };
 		9D7D4F7C16B75DAA002FED35 /* CategoricallyEvilTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CategoricallyEvilTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D7D4F7D16B75DAA002FED35 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		9D7D4F8516B75DAA002FED35 /* CategoricallyEvilTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CategoricallyEvilTests-Info.plist"; sourceTree = "<group>"; };
@@ -110,8 +110,8 @@
 		9D7D4F6D16B75DAA002FED35 /* CategoricallyEvil */ = {
 			isa = PBXGroup;
 			children = (
-				9D7D4F7416B75DAA002FED35 /* CategoricallyEvil.h */,
-				9D7D4F7516B75DAA002FED35 /* CategoricallyEvil.m */,
+				9D7D4F7416B75DAA002FED35 /* SSCategoricallyEvil.h */,
+				9D7D4F7516B75DAA002FED35 /* SSCategoricallyEvil.m */,
 				9D7D4F6E16B75DAA002FED35 /* Supporting Files */,
 			);
 			path = CategoricallyEvil;
@@ -263,7 +263,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9D7D4F7616B75DAA002FED35 /* CategoricallyEvil.m in Sources */,
+				9D7D4F7616B75DAA002FED35 /* SSCategoricallyEvil.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

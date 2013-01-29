@@ -7,26 +7,52 @@
 //
 
 #import "CategoricallyEvilTests.h"
+#import "SSCategoricallyEvil.h"
+
+@interface DummyObject : NSObject
+-(NSString *) runOnce;
+-(NSString *) runTwice;
+@end
+
+@implementation DummyObject : NSObject
+-(NSString *) runOnce{
+  return @"once";
+}
+
+-(NSString *) runTwice{
+  return @"twice";
+}
+@end
+
 
 @implementation CategoricallyEvilTests
 
 - (void)setUp
 {
     [super setUp];
-    
-    // Set-up code here.
 }
 
 - (void)tearDown
 {
-    // Tear-down code here.
-    
     [super tearDown];
 }
 
-- (void)testExample
+- (void)testSwizzle
 {
-    STFail(@"Unit tests are not implemented yet in CategoricallyEvilTests");
+  DummyObject *dummy = [[DummyObject alloc] init];
+  
+  NSString *result1 = [dummy runOnce];
+  
+  [dummy swizzleMe:@selector(runOnce) andNewMethod:@selector(runTwice)];
+  
+  NSString *result2 = [dummy runOnce];
+  
+  NSString *result3 = [dummy runTwice];
+  
+  STAssertFalse([result1 isEqualToString:result2], @"Same method called twice, two different results");
+  
+  STAssertEquals(result1, result3, @"Different method, same strings");
+  
 }
 
 @end
