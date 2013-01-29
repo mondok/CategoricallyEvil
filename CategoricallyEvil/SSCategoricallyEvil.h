@@ -10,6 +10,6 @@
 #import </usr/include/objc/objc-class.h>
 
 @interface NSObject(Swazzle)
--(void) swizzleMe:(SEL) orig andNewMethod:(SEL) new;
+-(void) swizzleMe:(SEL) orig withMethod:(SEL) new;
 @end
 

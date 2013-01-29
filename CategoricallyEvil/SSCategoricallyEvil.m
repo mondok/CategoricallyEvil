@@ -10,7 +10,7 @@
 
 @implementation NSObject(Swazzle)
 
--(void) swizzleMe:(SEL) orig andNewMethod:(SEL) new{
+-(void) swizzleMe:(SEL) orig withMethod:(SEL) new{
   Method origMethod = class_getInstanceMethod(self.class, orig);
   Method newMethod = class_getInstanceMethod(self.class, new);
   if(class_addMethod(self.class, orig, method_getImplementation(newMethod), method_getTypeEncoding(newMethod)))

@@ -14,7 +14,7 @@ It seemed right to kick this project off with a most baneful category, and that 
 // swizzle two methods
 NSString *basicString = @"I'm a string";
   
-[basicString swizzleMe:@selector(uppercaseString) andNewMethod:@selector(lowercaseString)];
+[basicString swizzleMe:@selector(uppercaseString) withMethod:@selector(lowercaseString)];
   
 // let the evil flow through your code
 NSString *result1 = [basicString uppercaseString];

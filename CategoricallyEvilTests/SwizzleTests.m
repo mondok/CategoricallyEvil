@@ -43,7 +43,7 @@
   
   NSString *result1 = [dummy runOnce];
   
-  [dummy swizzleMe:@selector(runOnce) andNewMethod:@selector(runTwice)];
+  [dummy swizzleMe:@selector(runOnce) withMethod:@selector(runTwice)];
   
   NSString *result2 = [dummy runOnce];
   
@@ -59,7 +59,7 @@
   NSString *upperVersion = @"I'M A STRING";
   NSString *lowerVersion = @"i'm a string";
   
-  [basicString swizzleMe:@selector(uppercaseString) andNewMethod:@selector(lowercaseString)];
+  [basicString swizzleMe:@selector(uppercaseString) withMethod:@selector(lowercaseString)];
   
   NSString *result1 = [basicString uppercaseString];
   NSString *result2 = [basicString lowercaseString];
