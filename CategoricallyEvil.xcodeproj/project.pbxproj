@@ -14,7 +14,7 @@
 		9D7D4F7F16B75DAA002FED35 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D7D4F6716B75DAA002FED35 /* Cocoa.framework */; };
 		9D7D4F8216B75DAA002FED35 /* CategoricallyEvil.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D7D4F6416B75DAA002FED35 /* CategoricallyEvil.framework */; };
 		9D7D4F8816B75DAA002FED35 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9D7D4F8616B75DAA002FED35 /* InfoPlist.strings */; };
-		9D7D4F8B16B75DAA002FED35 /* CategoricallyEvilTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D4F8A16B75DAA002FED35 /* CategoricallyEvilTests.m */; };
+		9D7D4F8B16B75DAA002FED35 /* SwizzleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D4F8A16B75DAA002FED35 /* SwizzleTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,8 +42,8 @@
 		9D7D4F7D16B75DAA002FED35 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		9D7D4F8516B75DAA002FED35 /* CategoricallyEvilTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CategoricallyEvilTests-Info.plist"; sourceTree = "<group>"; };
 		9D7D4F8716B75DAA002FED35 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		9D7D4F8916B75DAA002FED35 /* CategoricallyEvilTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CategoricallyEvilTests.h; sourceTree = "<group>"; };
-		9D7D4F8A16B75DAA002FED35 /* CategoricallyEvilTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CategoricallyEvilTests.m; sourceTree = "<group>"; };
+		9D7D4F8916B75DAA002FED35 /* SwizzleTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwizzleTests.h; sourceTree = "<group>"; };
+		9D7D4F8A16B75DAA002FED35 /* SwizzleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SwizzleTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,8 +130,8 @@
 		9D7D4F8316B75DAA002FED35 /* CategoricallyEvilTests */ = {
 			isa = PBXGroup;
 			children = (
-				9D7D4F8916B75DAA002FED35 /* CategoricallyEvilTests.h */,
-				9D7D4F8A16B75DAA002FED35 /* CategoricallyEvilTests.m */,
+				9D7D4F8916B75DAA002FED35 /* SwizzleTests.h */,
+				9D7D4F8A16B75DAA002FED35 /* SwizzleTests.m */,
 				9D7D4F8416B75DAA002FED35 /* Supporting Files */,
 			);
 			path = CategoricallyEvilTests;
@@ -271,7 +271,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9D7D4F8B16B75DAA002FED35 /* CategoricallyEvilTests.m in Sources */,
+				9D7D4F8B16B75DAA002FED35 /* SwizzleTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

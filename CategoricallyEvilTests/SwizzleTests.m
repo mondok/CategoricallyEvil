@@ -6,7 +6,7 @@
 //  Copyright (c) 2013 Edentech. All rights reserved.
 //
 
-#import "CategoricallyEvilTests.h"
+#import "SwizzleTests.h"
 #import "SSCategoricallyEvil.h"
 
 @interface DummyObject : NSObject
@@ -25,7 +25,7 @@
 @end
 
 
-@implementation CategoricallyEvilTests
+@implementation SwizzleTests
 
 - (void)setUp
 {
